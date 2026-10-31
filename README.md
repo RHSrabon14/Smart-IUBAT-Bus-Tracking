@@ -1,24 +1,24 @@
 # 🚌 Smart IUBAT Bus Tracking & Passenger Monitoring System
 
-An IoT-based smart university transportation system combining real-time GPS tracking, AI-powered passenger detection, and web-based bus management.
+An IoT-based smart university transportation system that combines real-time GPS tracking, AI-powered passenger detection, and a web-based bus management platform.
 
 ## 📌 Project Overview
 
-Smart IUBAT Bus Tracking & Passenger Monitoring is designed to improve university transportation by helping students and faculty check bus locations and passenger counts before choosing a bus.
+The **Smart IUBAT Bus Tracking & Passenger Monitoring System** aims to make university transportation more convenient by allowing students and faculty to check bus locations and passenger counts before choosing a bus.
 
-The system combines IoT hardware, GPS technology, computer vision, and a MERN stack web application to provide smarter and more convenient transportation information.
+The system integrates IoT hardware, GPS technology, computer vision, and a MERN stack web application to provide useful transportation information.
 
 ## ✨ Key Features
 
 - 📍 Real-time GPS-based bus tracking.
 - 👨‍🎓 Separate Student and Faculty panels.
 - 🔐 University ID-based access for students and faculty.
-- 👨‍💻 Dedicated Admin login.
+- 🛠️ Dedicated Admin login.
 - 🚌 Bus information management.
 - 📷 ESP32-CAM-based passenger image capture.
 - 📡 SIM800L mobile internet connectivity.
 - 📶 Wi-Fi as an alternative image transmission method.
-- 🤖 YOLO-based passenger detection.
+- 🤖 YOLO-based passenger detection using Python.
 - 📊 Passenger count display on the website.
 
 ## 🏗️ Technologies Used
@@ -37,36 +37,41 @@ The system combines IoT hardware, GPS technology, computer vision, and a MERN st
 ## 🔌 Hardware Components
 
 - **ESP32-CAM:** Captures images of passengers inside the bus.
-- **NEO-6M GPS:** Retrieves geographical coordinates for live bus tracking.
-- **SIM800L GSM/GPRS:** Provides mobile internet connectivity using a Grameenphone SIM.
-- **Wi-Fi:** Provides an alternative connection for image transmission when SIM800L connectivity is unavailable or unsuccessful.
+- **NEO-6M GPS:** Retrieves geographical coordinates for bus tracking.
+- **SIM800L GSM/GPRS Module:** Provides mobile internet connectivity using a Grameenphone SIM.
+- **Wi-Fi:** Serves as an alternative connection for image transmission when SIM800L connectivity is unavailable or unsuccessful.
+
+The system uses a single ESP32-CAM board connected to the GPS and communication modules.
 
 ## 🔄 How It Works
 
-1. The NEO-6M GPS module obtains the bus's geographical location.
-2. The ESP32-CAM captures images inside the bus.
-3. Images are transmitted through SIM800L mobile internet.
-4. If SIM800L connectivity is unavailable or transmission fails, Wi-Fi is used as an alternative.
+1. The NEO-6M GPS module retrieves the bus's geographical coordinates.
+2. The ESP32-CAM captures images of passengers inside the bus.
+3. Images are transmitted through SIM800L mobile internet connectivity.
+4. If SIM800L connectivity is unavailable or image transmission fails, Wi-Fi is used as an alternative.
 5. The backend receives the uploaded images.
 6. A separate Python service processes the images using YOLO.
 7. YOLO detects people and calculates the passenger count.
-8. Bus location and passenger information are displayed on the website.
+8. Bus location and passenger information are displayed on the web application.
 
 ## 👥 User Panels
 
 ### 🎓 Student Panel
-- Access using university ID.
+
+- Access the system using a university ID.
 - View available buses.
 - Check live bus locations.
 - View passenger counts before choosing a bus.
 
 ### 👨‍🏫 Faculty Panel
-- Access using university ID.
+
+- Access the system using a university ID.
 - View bus information.
 - Track bus locations.
 - Check passenger counts.
 
 ### 🛠️ Admin Panel
+
 - Dedicated administrator login.
 - Manage and update bus information.
 - Maintain transportation data.
@@ -75,22 +80,42 @@ The system combines IoT hardware, GPS technology, computer vision, and a MERN st
 
 ### 1. Homepage and Login
 
-![Homepage and Login](./homepage.png)
+![Homepage and Login](./images/homepage.png)
 
 ### 2. Admin Dashboard
 
-![Admin Dashboard](./admin-dashboard.png)
+![Admin Dashboard](./images/admin-dashboard.png)
 
 ### 3. Live GPS Tracking
 
-![Live GPS Tracking](./live-gps-tracking.png)
+![Live GPS Tracking](./images/live-gps-tracking.png)
+
+## 🔩 Hardware Setup
+
+The following images show the hardware components used in the project.
+
+### 1. Complete Hardware Setup
+
+![Complete Hardware Setup](./images/complete-hardware.jpg)
+
+### 2. NEO-6M GPS Module
+
+![NEO-6M GPS Module](./images/neo6m-gps.jpg)
+
+### 3. SIM800L GSM/GPRS Module
+
+![SIM800L Module](./images/sim800l.jpg)
+
+### 4. ESP32-CAM Module
+
+![ESP32-CAM Module](./images/esp32-cam.jpg)
 
 ## 🚀 Future Improvements
 
 - Improve passenger detection accuracy.
-- Implement bus arrival-time estimation.
+- Implement estimated bus arrival times.
 - Add historical passenger statistics.
-- Improve connectivity and transmission reliability.
+- Improve connectivity and image transmission reliability.
 - Introduce advanced transportation analytics.
 
 ## 🎯 Project Goal
@@ -99,11 +124,9 @@ To make university transportation smarter, more transparent, and more convenient
 
 ## 👨‍💻 Project Information
 
-**Project Name:** Smart IUBAT Bus Tracking & Passenger Monitoring System
-
-**Institution:** International University of Business Agriculture and Technology (IUBAT)
-
-**Location:** Dhaka, Bangladesh
+- **Project Name:** Smart IUBAT Bus Tracking & Passenger Monitoring System
+- **Institution:** International University of Business Agriculture and Technology (IUBAT)
+- **Location:** Dhaka, Bangladesh
 
 ---
 
