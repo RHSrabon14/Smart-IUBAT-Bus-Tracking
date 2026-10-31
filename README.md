@@ -110,6 +110,10 @@ The following images show the hardware components used in the project.
 
 ![ESP32-CAM Module](./images/esp32-cam.jpg)
 
+## 🏛️ System Architecture
+
+![System Architecture](./images/architecture-diagram.png)
+
 ## 🚀 Future Improvements
 
 - Improve passenger detection accuracy.
